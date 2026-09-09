@@ -35,6 +35,23 @@
       font-size: 2.2rem;
       margin-top: 0.8rem;
     }
+/* Galaxy swirl background */
+    .galaxy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Spiral_Galaxy_M74.jpg') center/cover no-repeat;
+      filter: blur(4px) brightness(0.8);
+      animation: swirl 40s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes swirl {
+      from { transform: rotate(0deg) scale(1.2); }
+      to { transform: rotate(360deg) scale(1.2); }
+    }
   </style>
 </head>
 <body>
