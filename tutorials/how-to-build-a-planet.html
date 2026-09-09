@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michael’s Cosmic Playground - How to build a planet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #4b6fff, #050816);
+      color: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .card {
+      text-align: center;
+      padding: 2rem 3rem;
+      border-radius: 18px;
+      background: rgba(0, 0, 0, 0.35);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.4rem 0;
+      opacity: 0.9;
+    }
+
+    .emoji {
+      font-size: 2.2rem;
+      margin-top: 0.8rem;
+    }
+
+    /* Galaxy swirl background */
+    .galaxy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Spiral_Galaxy_M74.jpg') center/cover no-repeat;
+      filter: blur(4px) brightness(0.8);
+      animation: swirl 40s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes swirl {
+      from { transform: rotate(0deg) scale(1.2); }
+      to { transform: rotate(360deg) scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="galaxy"></div>
+
+  <div class="card">
+    <h1>HOW TO BUILD A PLANET</h1>
+    <p>Cosmic Engineering Tutorial — Level 5 Clearance</p>
+
+    <p><strong>Step 1:</strong> Gather stardust. You need debris from old stars — iron, carbon, silicates. Mix until chunky.</p>
+    <p><strong>Step 2:</strong> Spin it.</p>
+    <p>Rotation = gravity = clumping. The faster it spins, the faster it forms a sphere.</p>
+
+    <p><strong>Step 3:</strong> Heat the core.</p>
+    <p>Melt the center until it becomes a glowing metal heart. This creates magnetic fields.</p>
+
+    <p><strong>Step 4:</strong> Add oceans, land, or chaos.</p>
+    <p>Water? Lava? Ice? creatures? Your choice.</p>
+
+    <p><strong>Step 5:</strong> Atmosphere time.</p>
+    <p>Wrap your planet in gases. Oxygen for life, methane for chaos, gases for vibes.</p>
+
+    <p><strong>Step 6:</strong> Place it in orbit.</p>
+    <p>Find a star. Drop your planet into a stable path. Don’t let it crash.</p>
+
+    <p><strong>Step 7:</strong> Name it.</p>
+    <p>Every planet needs a name. You can't just say: "I made a planet! It's called.</p>
+
+    <div class="emoji">🌍✨🪐</div>
+  </div>
+</body>
+</html>
